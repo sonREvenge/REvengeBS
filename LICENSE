@@ -1,0 +1,33 @@
+REvenge — Source-Available, No-Resell License
+Copyright (c) 2026 3xq9
+
+Permission is granted to any individual to view, study, and run this source
+code for personal, educational, and research purposes only.
+
+The following are NOT permitted without prior written permission from the
+copyright holder:
+
+  1. Commercial use of any kind, including but not limited to selling,
+     renting, sublicensing, or providing this code (or any derivative work)
+     as a paid service.
+  2. Redistribution of this code, in original or modified form, in any
+     public or private channel, with or without a fee.
+  3. Hosting this code or any derivative as a network-accessible service.
+  4. Repackaging this code or any derivative into a product distributed
+     under a different name or brand.
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+This project targets a third-party application ("BSD Brawl") and modifies
+its in-process memory at runtime. The use of this software may violate the
+target application's terms of service. The author makes no claim about the
+legality of such use in any jurisdiction. Users assume all responsibility
+for the consequences of running this code.
+
+Contact: discord `3xq9`
