@@ -1,0 +1,21 @@
+{
+  "name": "revengebs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "frida-compile agent/index.js -o dist/agent.js -B iife"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0"
+  },
+  "devDependencies": {
+    "frida-compile": "19.1.0"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  }
+}

@@ -1,0 +1,577 @@
+export const lead = Object.freeze({
+  '8BIT': 70,
+  AMBER: 83,
+  ANGELO: 60,
+  BEA: 56,
+  BELLE: 56,
+  BO: 74,
+  BONNIE: 59,
+  BROCK: 70,
+  BYRON: 59,
+  CARL: 76,
+  CLANCY: 72,
+  COLETTE: 57,
+  COLT: 62,
+  EVE: 75,
+  FINX: 68,
+  GALE: 68,
+  GRAY: 56,
+  GRIFF: 68,
+  GUS: 68,
+  JAE: 60,
+  JANET: 65,
+  JESS: 72,
+  LILY: 68,
+  LOU: 60,
+  MAISIE: 78,
+  MANDY: 65,
+  MAX: 68,
+  MEG: 54,
+  MRP: 65,
+  NANI: 98,
+  OTIS: 60,
+  MJ: 69,
+  PEARL: 69,
+  PENNY: 61,
+  PIPER: 56,
+  RICK: 68,
+  RT: 55,
+  RUFFS: 66,
+  SPIKE: 65,
+  SQUEAK: 74,
+  STU: 60,
+  SURGE: 72,
+});
+export const aliases = Object.freeze({
+  '8-BIT': '8BIT',
+  EL_PRIMO: 'PRIMO',
+  ELPRIMO: 'PRIMO',
+  MR_P: 'MRP',
+  'MR.P': 'MRP',
+  LARRY_AND_LAWRIE: 'TWINS',
+  LOLA: 'LOLLA',
+  MELODIE: 'MELODY',
+  JESSIE: 'JESS',
+  DYNAMIKE: 'MIKE',
+  DARRYL: 'BARRELBOT',
+  HANK: 'FISHTANK',
+  MOE: 'DIGGER',
+  GLOWY: 'GLOWBERT',
+  BOLT: 'BOLDER',
+  KENJI: 'SAMURAI',
+  TARA: 'TARO',
+  RICO: 'RICK',
+  STARR_NOVA: 'STELLA',
+  PAM: 'MJ',
+  SAM: 'BRONSON',
+  'JAE-YONG': 'JAE',
+  JAE_YONG: 'JAE',
+});
+export const kinds = Object.freeze({
+  GunslingerProjectile: {
+    fit: 'thin',
+  },
+  GunslingerOverchargedProjectile: {
+    fit: 'thin',
+    maxRange: 2600,
+  },
+  BeeSniperProjectile: {
+    fit: 'thin',
+    maxRange: 3000,
+  },
+  BeeSniperCirclingProjectile: {
+    fit: 'orbit',
+    blob: true,
+  },
+  BeeSniperChargedProjectile: {
+    fit: 'long',
+    strip: true,
+    maxRange: 2200,
+  },
+  BeeSniperUltiProjectile: {
+    fit: 'orbit',
+    blob: true,
+  },
+  PiperHandgunProjectile: {
+    fit: 'half',
+    maxRange: 2200,
+  },
+  SniperProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  BeamerProjectile: {
+    fit: 'ray',
+    chargedRange: 3900,
+    speedMul: 1.15,
+    strip: true,
+  },
+  BulletstormLastShotProjectile: {
+    fit: 'long',
+    maxRange: 3300,
+  },
+  BulletstormOnShellPickedUpProjectile: {
+    fit: 'plain',
+    maxRange: 3300,
+  },
+  ElectroSniperProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  ElectroSniperMutantProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  ElectroSniperUltiProjectile: {
+    fit: 'broad',
+  },
+  ElectroSniperOverchargedUltiProjectile: {
+    fit: 'broad',
+  },
+  ElectroSniperBounceProjectile: {
+    fit: 'half',
+  },
+  ElectroSniperSecondaryProjectile_001: {
+    fit: 'half',
+  },
+  HookProjectile: {
+    fit: 'long',
+  },
+  SnakeOilProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  SnakeOilUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  SnakeOilHyperUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  HookProjectile2: {
+    drop: true,
+  },
+  SoulCollectorProjectile: {
+    fit: 'plain',
+  },
+  SoulCollectorUlti: {
+    fit: 'broad',
+    blob: true,
+  },
+  MosquitoProjectile: {
+    fit: 'thin',
+  },
+  MosquitoProjectilePoison: {
+    fit: 'long',
+    strip: true,
+    maxRange: 3300,
+  },
+  SpeedyProjectile: {
+    fit: 'thin',
+  },
+  SpeedyOverchargedProjectile: {
+    fit: 'thin',
+  },
+  RollerProjectile: {
+    fit: 'broad',
+  },
+  RollerGadgetProjectile: {
+    fit: 'plain',
+  },
+  BowDudeProjectile: {
+    fit: 'plain',
+  },
+  BowDudeOverchargedProjectile: {
+    fit: 'plain',
+  },
+  BowDudeProjectileTripWire: {
+    fit: 'long',
+    blob: true,
+  },
+  BowDudeProjectileTripWireBuddy: {
+    fit: 'long',
+    blob: true,
+  },
+  BowDudeGadgetSkillProjectile: {},
+  BowDudeGadgetSkillProjectileBuddy: {},
+  BowDudeSpawnMineProjectile: {
+    drop: true,
+  },
+  BowDudeSpawnOverchargedMineProjectile: {
+    drop: true,
+  },
+  RocketGirlProjectile: {
+    fit: 'thick',
+    blast: true,
+    lockPath: true,
+    growR: 280,
+  },
+  RocketGirlGadgetProjectile: {
+    fit: 'broad',
+    maxRange: 3000,
+  },
+  RocketGirlUltiProjectile: {
+    fit: 'thick',
+    blast: true,
+    growR: 280,
+  },
+  RocketGirlUltiOverchargedProjectile: {
+    fit: 'thick',
+    blast: true,
+    growR: 280,
+  },
+  CannonGirlProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  CannonGirlSmallProjectile: {
+    fit: 'broad',
+  },
+  CannonGirlChainProjectile: {
+    fit: 'half',
+  },
+  CannonGirlExplosionProjectileOvercharged: {
+    fit: 'long',
+    blob: true,
+  },
+  KnightProjectile1: {
+    fit: 'thick',
+  },
+  KnightProjectile2: {
+    fit: 'thick',
+  },
+  KnightProjectile3: {
+    fit: 'thick',
+  },
+  KnightUltiProjectile: {
+    fit: 'thick',
+  },
+  DuplicatorProjectile: {
+    fit: 'long',
+  },
+  OverchargedDuplicatorProjectile: {
+    fit: 'long',
+  },
+  DuplicatorUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  OverchargedDuplicatorUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  SpawnerDudeProjectile: {
+    fit: 'long',
+    strip: true,
+    growR: 250,
+  },
+  SpawnerDudeMutantProjectile: {
+    fit: 'long',
+  },
+  SpawnerDudeIndirectProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  SpawnerDudeUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  SpawnerDudeOverchargedUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  CocoonerProjectile: {
+    fit: 'long',
+    strip: true,
+    growR: 150,
+    reachAdj: -150,
+  },
+  CocoonerProjectile2: {
+    fit: 'long',
+    growR: 150,
+    home: true,
+  },
+  CocoonerUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  CocoonerOverchargedUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  AmbusherProjectile: {
+    fit: 'thick',
+  },
+  AmbusherUltiProjectile: {
+    fit: 'long',
+  },
+  AmbusherUltiProjectile2: {
+    fit: 'long',
+  },
+  AmbusherOverchargedUltiProjectile: {
+    fit: 'long',
+  },
+  CrabProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  CrabUltiProjectile: {
+    fit: 'broad',
+  },
+  CrabOverchargedUltiProjectile: {
+    fit: 'broad',
+  },
+  CrabOverchargedUltiReturnProjectile: {
+    fit: 'broad',
+  },
+  FishTankUltiProjectile: {
+    fit: 'broad',
+  },
+  FishTankUltiProjectileSmall: {
+    fit: 'broad',
+  },
+  CookerProjectile: {
+    fit: 'long',
+    strip: true,
+    reachAdj: -450,
+  },
+  MaisieProjectile: {
+    fit: 'long',
+    strip: true,
+    lockPath: true,
+    reachAdj: 900,
+    fade: true,
+    fadeBase: 786.63,
+    fadeK: 0.001231,
+  },
+  TrickShotDudeProjectile: {
+    fit: 'thin',
+  },
+  TrickShotDudeUltiProjectile: {
+    fit: 'thin',
+  },
+  TrickShotDudeOverchargedProjectile: {
+    fit: 'thin',
+  },
+  ControllerProjectile: {
+    fit: 'broad',
+    growR: 150,
+    reachAdj: 600,
+  },
+  ControllerArchetypeCollabProjectileLvl1: {
+    fit: 'plain',
+  },
+  ControllerArchetypeCollabProjectileLvl2: {
+    fit: 'plain',
+  },
+  ControllerArchetypeCollabProjectileLvl3: {
+    fit: 'plain',
+  },
+  ControllerUltiProjectile: {
+    drop: true,
+  },
+  ControllerUltiOverchargedProjectile: {
+    drop: true,
+  },
+  AxeJugglerProjectile: {
+    fit: 'broad',
+    reachAdj: 200,
+  },
+  AxeJugglerProjectile2: {
+    fit: 'long',
+  },
+  AxeJugglerOverchargedProjectile2: {
+    fit: 'long',
+  },
+  SplitterProjectile: {
+    fit: 'long',
+  },
+  ArtilleryDudeProjectile: {
+    fit: 'broad',
+    strip: true,
+  },
+  ArtilleryDudeProjectile2: {
+    fit: 'thin',
+  },
+  ArtilleryDudeUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  ArtilleryDudeOverchargedUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  ArtilleryDudeTurretProjectile: {
+    drop: true,
+  },
+  ArtilleryDudeOverchargedTurretProjectile: {
+    drop: true,
+  },
+  PercenterProjectile: {
+    fit: 'long',
+    strip: true,
+    lockPath: true,
+    maxRange: 2800,
+  },
+  PercenterOverchargedProjectile: {
+    fit: 'long',
+    strip: true,
+    lockPath: true,
+    maxRange: 2800,
+  },
+  MeepleProjectile: {
+    fit: 'plain',
+    growR: 150,
+    reachAdj: 200,
+  },
+  MeepleUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  MeepleOverchargedUltiProjectile: {
+    fit: 'broad',
+    blob: true,
+  },
+  MeepleWallProjectile: {
+    drop: true,
+  },
+  ShamanProjectile: {
+    fit: 'long',
+    strip: true,
+  },
+  CoopRangedEnemyProjectile: {
+    maxRange: 2500,
+  },
+  SniperHomingProjectile: {
+    fit: 'long',
+    maxRange: 3500,
+    growR: 100,
+    strip: true,
+  },
+  MechanicProjectile2: {
+    fit: 'fallback',
+    maxRange: 2000,
+  },
+  MechanicProjectile3: {
+    fit: 'fallback',
+    maxRange: 2000,
+  },
+  DoorManCaneGadgetProjectile: {
+    fit: 'fallback',
+    maxRange: 3000,
+  },
+  MummyProjectile: {
+    fit: 'long',
+    growR: 150,
+    reachAdj: -750,
+    fade: true,
+    fadeBase: 4461.04,
+    fadeK: -0.000971,
+  },
+  WhirlwindProjectile: {
+    fit: 'long',
+    growR: 250,
+    reachAdj: -250,
+    lockPath: true,
+  },
+  WhirlwindProjectile2: {
+    growR: 250,
+    home: true,
+  },
+  MorningstarProjectile: {
+    growR: 150,
+    maxRange: 2700,
+  },
+  MorningstarProjectileRecall: {
+    growR: 150,
+    home: true,
+  },
+  AlternatorHealProjectile: {
+    fit: 'fallback',
+    maxRange: 2800,
+  },
+  AlternatorDamageProjectile: {
+    fit: 'fallback',
+    maxRange: 2800,
+  },
+  KickerDudeProjectile2: {
+    fit: 'fallback',
+    maxRange: 2200,
+  },
+  DancerProjectileSingle: {
+    fit: 'fallback',
+    maxRange: 2700,
+  },
+  DancerProjectileDouble: {
+    fit: 'fallback',
+    maxRange: 2500,
+  },
+  DancerProjectileTriple: {
+    fit: 'fallback',
+    maxRange: 1700,
+  },
+});
+export const fits = Object.freeze({
+  orbit: {
+    grow: 0.65,
+    pad: 120,
+  },
+  long: {
+    grow: 0.55,
+    pad: 90,
+  },
+  thick: {
+    grow: 0.6,
+    pad: 100,
+  },
+  broad: {
+    grow: 0.45,
+    pad: 70,
+  },
+  half: {
+    grow: 0.4,
+    pad: 50,
+  },
+  plain: {
+    grow: 0.45,
+    pad: 60,
+  },
+  ray: {
+    grow: 0.5,
+    pad: 80,
+  },
+  thin: {
+    grow: 0.35,
+    pad: 40,
+  },
+  fallback: {
+    grow: 0.45,
+    pad: 60,
+  },
+});
+export const skipSkills = Object.freeze([
+  'ShamanUlti',
+  'MechanicUlti',
+  'ClusterBombDudeUlti',
+  'ArcadeUlti',
+  'ArtilleryDudeUlti',
+  'SoulCollectorUlti',
+  'MinigunDudeUlti',
+  'KnightUlti',
+  'DuplicatorUlti',
+  'TwinsUlti',
+  'SpawnerDudeUlti',
+  'ConductorUlti',
+  'MeepleUlti',
+  'FleaUlti',
+  'ReviverUlti',
+  'VoodooUlti',
+  'ShadowdemonUlti',
+  'RollerUlti',
+  'SniperUlti',
+  'EnragerUlti',
+  'PowerLevelerUlti',
+  'DoorManUlti',
+  'ConductorUltiSpawn',
+]);
